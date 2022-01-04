@@ -1,0 +1,786 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------Portada-----------------------------------*/
+header{
+    width: 100%;
+}
+
+.indexFondo{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url(../multimedia/indexFondo.png);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    position: relative;
+
+}
+
+#indexTitulo{
+    text-align: justify;
+    margin-left: 150px;
+    
+}
+
+#indexTitulo h1{
+    font-size: 100px;
+    color: #fff;
+    font-family: 'Kaushan Script', cursive;
+}
+#indexTitulo p{
+    margin-top: 25px;
+    font-size: 25px;
+    margin-left: 25px;
+    color: #fff;
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    font-weight: 200;
+}
+/*-----------------------------------Navbar-----------------------------------*/
+
+
+#burger{
+    height: 40px;
+    position: absolute;
+    top: 40px;
+    right: 100px;
+}
+
+#burger img{
+    width: 65px;
+    height: auto;
+    padding: 10px;
+    transition: border 1s;
+}
+
+#burger img:hover{
+    border: 1px solid rgb(124, 124, 124);
+    border-radius: 20%;
+}
+
+.offcanvas-header{
+    background-color: rgb(24, 12, 12);
+}
+
+.offcanvas-header h5{
+    color: #fff;
+}
+
+#nav{
+    background-color: rgb(255, 240, 240);
+}
+
+#nav ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+#nav ul li a{
+    text-decoration: none;
+    color:rgb(24, 12, 12);
+    font-size: 20px;
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    font-weight: 200;
+    transition: font-size 0.5s;
+}
+
+#nav ul li a:hover{
+    color:rgb(77, 48, 48);
+    font-size: 25px;
+
+}
+
+/*-------------------------Scroll down button---------------------------*/
+.arrow,
+.arrow::before{
+  position: absolute;
+  left: 50%;
+}
+
+.arrow{
+  width: 40px;  
+  height: 40px;
+ bottom: 70px;
+  margin: -20px 0 0 -20px;
+  transform: rotate(45deg);
+  border-left: none;
+  border-top: none;
+  border-right: 2px #fff solid;
+  border-bottom: 2px #fff solid;
+}
+  
+.arrow::before{
+  content: '';
+  width: 20px;
+  height: 20px;
+  top: 50%;
+  margin: -10px 0 0 -10px;
+  border-left: none;
+  border-top: none;
+  border-right: 1px #fff solid;
+  border-bottom: 1px #fff solid;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-name: arrow;
+}
+
+@keyframes arrow{
+  0%{
+    opacity: 1
+  }
+  100%{
+    opacity: 0;
+    transform: translate(-10px, -10px);
+  }
+}
+
+
+/*------------------------------------------------ MAIN------------------------------------------------ */
+
+#main{
+    display: flex;
+    width: 100%;
+    background-color: rgb(255, 243, 236);
+    height: 95vh;
+}
+
+#main section{
+    width: 50%;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+#main h3{
+   
+    font-family: 'Kaushan Script', cursive;
+    font-size: 35px;
+    font-weight: 600;
+    display: inline;
+    color: rgb(77, 48, 48);
+}
+#main p{
+    width: 70%;
+    margin-top: 10px;
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    font-size: 20px;
+}
+#main img{
+    width: 60%;
+    height: auto;
+}
+#main i{
+    font-size: 30px;
+    color: rgb(77, 48, 48);
+    margin-left: 10px;
+}
+
+footer{
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(77, 48, 48);
+}
+footer a{
+    scroll-behavior: smooth;
+}
+footer i{
+    color: rgb(255, 243, 236);
+    font-size: 16px;
+    transition: font-size 0.5s;
+}
+footer i:hover{
+    font-size: 20px;
+}
+/*------------------------------------------------FIN INDEX------------------------------------------------*/
+
+
+/* ------------------------------------------------FITNESS------------------------------------------------*/
+
+#bodyFitness{
+    background-color: rgb(255, 243, 236);
+}
+
+
+/*-----------------PORTADA-------------------*/
+
+.fitnessPortada{
+    width: 100%;
+    height: 35vh;
+    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url(../multimedia/fitness.png);
+    background-position: center;
+    background-size: scale-down;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fitnessPortada h1{
+    font-size: 100px;
+    color: rgb(197, 197, 197);
+    font-family: 'Kaushan Script', cursive;
+    
+}
+
+/*-------------------MENU---------------------------*/
+
+.fitSearch{
+    width: 100%;
+    height: 65vh;
+    display: grid;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 10%;
+    padding-right: 10%;
+    grid-template-columns: repeat(2,400px);
+    grid-template-rows: 400px;
+    grid-gap: 30px;
+    align-content: center;
+    justify-content: center;
+}
+.fitSearch a{
+    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url(../multimedia/indexFondo.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(197, 197, 197);
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    font-size: 40px;
+    text-decoration: none;
+}
+
+
+/*---------------------------IMC SECTION------------------------*/
+
+.imc{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+.imc div{
+    width: 50%;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.imc img{
+    width: 100%;
+    height: auto;
+}
+
+.imcText h2{
+    margin-top: 70px;
+    margin-left: 20px;
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    
+}
+
+.imcText {
+    margin-left: 20px;
+    margin-top: 15px;
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    font-size: 22px;
+}
+
+.formIMC{
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(219, 203, 185);
+    border: 1px solid rgb(77, 48, 48);
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 50px;
+}
+.formIMC input{
+    width: 150px;
+    margin-bottom: 10px;
+}
+
+#resultadoIMC{
+    display: none;    
+
+}
+.showIMC{
+    margin-top: 50px;
+    margin-left: 18px;
+    background-color: rgb(107, 84, 84);
+    width: 50%;
+    height: 15%;
+  
+
+}
+
+#resultadoIMC p{
+    color:rgb(224, 224, 224);
+    font-size: 20px;
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    text-align: center;
+    margin-top: 10%;
+}
+
+
+
+
+/*-------------------CUENTA CALORIAS--------------------*/
+
+.calorie{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 1fr;
+    justify-items: center;
+}
+.textCalorie{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.textCalorie h2{
+    margin-top: 70px;
+    margin-left: 20px;
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+}
+.textCalorie p {
+    margin-left: 20px;
+    margin-top: 15px;
+    font-family: 'Zen Kaku Gothic Antique',sans-serif;
+    font-size: 22px;
+    text-align: justify;
+}
+.textCalorie img{
+    width: 90%;
+    height: 500px;
+    
+}
+.calorieCounter{
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    font-size: 18px;
+    margin-top: 160px;
+    text-align: center;
+    background-color: rgb(219, 203, 185);
+    width: 60%;
+    height: 700px;
+    border: 1px solid rgb(77, 48, 48);
+}
+.calorieCounter form{
+    display: flex;
+    flex-direction: column;
+}
+.formGroup{
+    margin-top: 10px;
+}
+#result{
+    margin-top: 60px;
+    background-color: rgb(107, 84, 84);
+    color:rgb(224, 224, 224);
+    
+}
+#result div{
+    background-color: rgb(107, 84, 84);
+}
+.resultContenido{
+    padding: 10px;
+    background-color: rgb(197, 197, 197);
+    font-size: 20px;
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+}
+.resultContenido ul{
+    list-style: circle;
+    display: flex;
+    flex-direction: column;
+}
+.resultContenido ul li{
+    text-align: left;
+}
+/* ------------------------------------------------FIN DE SECCION FITNESS------------------------------------------------*/
+
+/* ------------------------------------------------EXPENSES------------------------------------------------*/
+.expensesPortada{
+    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url(../multimedia/fitness.png);
+    width: 100%;
+    height: 35vh;
+    background-position: center;
+    background-size: scale-down;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.expensesPortada h1{
+    font-size: 100px;
+    color: rgb(197, 197, 197);
+    font-family: 'Kaushan Script', cursive;
+    
+}
+.gridBudget{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 1fr;
+    height: 65vh;
+    width: 100%;
+    padding-top: 2%;
+    padding-right: 3%;
+    padding-left: 3%;
+    grid-gap: 20px;
+}
+.gridBudgetHijo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 60vh;
+    width: 100%;
+}
+.budgetDashboard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+ 
+}
+.dashTitle{
+    font-size: 20px;
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    font-weight: 600;
+}
+.toggle{
+    display: flex;
+}
+.tab1, .tab2, .tab3{
+    color: grey;
+    margin: 15px;
+    cursor: pointer;
+    padding: 10px;
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    font-size: 18px;
+   
+}
+.tab1:hover, .tab2:hover, .tab3:hover{
+    color: rgb(0, 0, 0);
+}
+
+.active{
+    color: #000;
+    font-weight: 600;
+}
+
+#income, #expense{
+    list-style: none;
+    width: 35%;
+    height: 80%;
+}
+
+.income, .expense{
+    list-style: none;
+}
+.input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.input i{
+    font-size: 30px;
+    color: rgb(88, 52, 52);
+}
+.input i:hover{
+    color:rgb(117, 94, 94);
+}
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.hide{
+    display: none;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+#incomeAmountInput{
+    width: 80px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+#expenseAmountInput{
+    width: 80px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.addExpense, .addIncome{
+    cursor: pointer;
+}
+.list{
+    list-style: none;
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    height: 80%;
+    width: auto;
+    position: relative;
+    font-size: 1em;
+}
+.list li{
+    display: flex;
+    font-size: 20px;
+}
+#expense li #edit{
+    position: absolute;
+    width:28px;
+    height: 20px;
+    cursor: pointer;
+    left: 290px;
+    background-image: url("../multimedia/edit-solid.svg");
+    background-size: 18px 15px;
+    background-repeat: no-repeat;
+}
+#expense li #delete{
+    position: absolute;
+    width:35px;
+    height: 20px;
+    cursor: pointer;
+    left: 250px;
+    background-image: url("../multimedia/trash-solid.svg");
+    background-size: 18px 15px;
+    background-repeat: no-repeat;
+}
+#income li #edit{
+    position: absolute;
+    width:28px;
+    height: 20px;
+    cursor: pointer;
+    left: 290px;
+    background-image: url("../multimedia/edit-solid.svg");
+    background-size: 18px 15px;
+    background-repeat: no-repeat;
+}
+#income li #delete{
+    position: absolute;
+    width:35px;
+    height: 20px;
+    cursor: pointer;
+    left: 250px;
+    background-image: url("../multimedia/trash-solid.svg");
+    background-size: 18px 15px;
+    background-repeat: no-repeat;
+}
+
+.gridBudgetHijo div ul li{
+    font-size: 18px;
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    color: rgb(0, 0, 0);
+}
+
+.budgetHeader{
+    display: flex;
+    width: 100%;
+    height: 100px;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 100px;
+}
+.outcome, .income, .balance{
+    font-size: 25px;
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+}
+.title{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 35px;
+}
+
+.textoBudget h3{
+    font-size: 28px;
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    color: rgb(88, 52, 52);
+    font-weight: 600;
+}
+.textoBudget p{
+    font-size: 18px;
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    color: #000;
+}
+
+
+
+/* TO DO LIST*/
+
+  .txtb{
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #000;
+    background: none;
+    padding: 10px;
+    outline: none;
+    font-size: 18px;
+}
+
+.task{
+    width: 100%;
+    background: rgba(165, 165, 165, 0.4);
+    padding: 18px;
+    margin: 6px 0;
+    overflow: hidden;
+}
+.task i{
+    float: right;
+    margin-left: 20px;
+    cursor: pointer;
+}
+.comp .task{
+    background: rgba(68, 68, 68, 0.4);
+}
+
+.comp, .notcomp{
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    color: #000;
+}
+
+/*------------------------------------------------------Study Session-----------------------------------------------------------------*/
+#pomodoro{
+    margin-top: 50px;
+}
+
+.introStudy{
+    margin-top: 30px;
+    margin-left: 40px;
+    text-align: justify;
+    width: 80%;
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    color: #000;
+}
+.introStudy h2{
+    color:rgb(88, 52, 52);
+    font-weight: 600;
+}
+.introStudy p{
+    font-size: 18px;
+    line-height: 30px;
+}
+
+#container {
+  
+    height: 200px;
+    width: 700px;
+    background-color: #F5E4C3;
+    margin: 0 auto;
+    border: 5px solid #624343;
+
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+/*timers*/
+.label {
+    align-self: center;
+    justify-self: center;
+
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#work {
+    grid-area: 1 / 2 / 1 / 2;
+}
+#break {
+    grid-area: 1 / 4 / 1 / 4;
+}
+#cycles {
+    grid-area: 1 / 3 / 1 / 3;
+}
+
+.timer {
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    font-size: 30px;
+    font-weight: 100;
+    
+}
+
+.label {
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    font-size: 25px;
+    font-weight: 100;
+    margin: 0;
+    padding: 0;
+}
+
+#counter {
+    grid-area: 2 / 3 / 2 / 3;
+    color: red;
+}
+
+#workTimer {
+    grid-area: 2 / 2 / 2 / 2;
+}
+
+#breakTimer {
+    grid-area: 2 / 4 / 2 / 4;
+}
+
+/*buttons*/
+
+.btn {
+    align-self: center;
+    justify-self: center;
+
+    width: 200px;
+    height: 50px;
+
+    font-size: 20px;
+}
+
+#start {
+    grid-area: 3 / 2 / 3 / 2;
+}
+
+#reset {
+    grid-area: 3 / 3 / 3 / 3;
+}
+
+#stop {
+    grid-area: 3 / 4 / 3 / 4;
+}
+
+/*------------------------------------TO DO LIST--------------------------*/
+.todoText{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.todoText p{
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    font-size: 20px;
+    width: 50%;
+    text-align: justify;
+}
+.todoText p span{
+    color: rgb(88, 52, 52);
+    font-weight: 600;
+}
+.todoMain{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.notcomp{
+    width: 60%;
+    margin-top: 20px;
+}
+#foot{
+    margin-top: 256px;
+}
